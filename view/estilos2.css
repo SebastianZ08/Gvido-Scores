@@ -1,0 +1,22 @@
+.root {
+    -fx-background-image: url("/view/logoAdmin.png");
+    -fx-background-size: cover;
+}
+
+.titulo {
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+}
+
+.text-field {
+    -fx-pref-width: 250;
+}
+
+.button {
+    -fx-background-color: #333;
+    -fx-text-fill: white;
+}
+
+.list-view {
+    -fx-pref-width: 300;
+}

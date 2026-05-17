@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+
+<VBox spacing="15" alignment="CENTER"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="view.UserController">
+
+    <Label text="Tienda de Partituras" styleClass="titulo"/>
+
+    <TextField fx:id="busquedaField" promptText="Buscar partitura..."/>
+    <Button text="Buscar" onAction="#handleBuscar"/>
+
+    <ListView fx:id="listaResultados" prefHeight="150"/>
+
+    <Button text="Añadir al carrito" onAction="#handleAddCarrito"/>
+
+    <Label text="Carrito"/>
+    <ListView fx:id="listaCarrito" prefHeight="150"/>
+
+    <Button text="Comprar (Generar TXT)" onAction="#handleComprar"/>
+
+    <Button text="Cerrar sesión" onAction="#handleLogout"/>
+
+    <Label fx:id="mensajeLabel"/>
+
+</VBox>
